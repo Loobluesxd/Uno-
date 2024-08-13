@@ -58,7 +58,7 @@ class Game(object):
         current_player = self.current_player
         itplayer = current_player.next
         players.append(current_player)
-        while itplayer and itplayer != not current_player:
+                while itplayer and itplayer != current_player:
             players.append(itplayer)
             itplayer = itplayer.next
         return players
